@@ -1,0 +1,4 @@
+categories : ['brand','model','transmission','color','body_type','poster_type','fuel_type']
+numerical_features : ['retail','post_age_in_days','age_of_car','mileage_in_km']
+hash_features : ['location']
+input_num : ["retail","Post Age","Year of Manufacture","Mileage (in km)"]

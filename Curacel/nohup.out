@@ -1,0 +1,79 @@
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://0.0.0.0:5500/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 118-614-943
+127.0.0.1 - - [07/May/2020 17:14:45] "[37mPOST /inference?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiYWRld2FsZSIsImV4cCI6MTU4ODg2ODIxMH0.iwPyEw5s3a8RqxmADA3uV2wwgw-bIfk45EM45TCccFc HTTP/1.1[0m" 200 -
+127.0.0.1 - - [07/May/2020 17:16:19] "[33mGET / HTTP/1.1[0m" 404 -
+127.0.0.1 - - [07/May/2020 17:16:20] "[33mGET / HTTP/1.1[0m" 404 -
+127.0.0.1 - - [07/May/2020 17:16:22] "[33mGET / HTTP/1.1[0m" 404 -
+127.0.0.1 - - [07/May/2020 17:16:27] "[1m[31mGET /inference HTTP/1.1[0m" 405 -
+127.0.0.1 - - [07/May/2020 17:16:28] "[1m[31mGET /inference HTTP/1.1[0m" 405 -
+127.0.0.1 - - [07/May/2020 17:16:30] "[1m[31mGET /inference HTTP/1.1[0m" 405 -
+127.0.0.1 - - [07/May/2020 17:16:31] "[1m[31mGET /inference?token HTTP/1.1[0m" 405 -
+127.0.0.1 - - [07/May/2020 17:16:32] "[1m[31mGET /inference?token HTTP/1.1[0m" 405 -
+127.0.0.1 - - [07/May/2020 17:16:34] "[1m[31mGET /inference?token= HTTP/1.1[0m" 405 -
+127.0.0.1 - - [07/May/2020 17:16:35] "[1m[31mGET /inference?token HTTP/1.1[0m" 405 -
+127.0.0.1 - - [07/May/2020 17:16:35] "[1m[31mGET /inference?token= HTTP/1.1[0m" 405 -
+127.0.0.1 - - [07/May/2020 17:16:37] "[1m[31mGET /inference?token= HTTP/1.1[0m" 405 -
+127.0.0.1 - - [07/May/2020 17:18:16] "[1m[31mGET /login HTTP/1.1[0m" 401 -
+127.0.0.1 - - [07/May/2020 17:19:03] "[37mGET /login HTTP/1.1[0m" 200 -
+127.0.0.1 - - [07/May/2020 17:19:06] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [07/May/2020 17:19:33] "[37mGET /login HTTP/1.1[0m" 200 -
+127.0.0.1 - - [07/May/2020 17:20:02] "[1m[31mGET /inference HTTP/1.1[0m" 405 -
+127.0.0.1 - - [07/May/2020 17:21:01] "[1m[31mGET /inference?token= HTTP/1.1[0m" 405 -
+127.0.0.1 - - [07/May/2020 17:21:48] "[1m[31mGET /inference?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoic2hvbGEiLCJleHAiOjE1ODg4Njg5NDN9.zlo6AWJF_KzwHtp2lkMQ4BRcyvIGZ-P9svut3eK3-KA HTTP/1.1[0m" 405 -
+127.0.0.1 - - [07/May/2020 17:23:15] "[1m[31mGET /inference?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoic2hvbGEiLCJleHAiOjE1ODg4Njg5NDN9.zlo6AWJF_KzwHtp2lkMQ4BRcyvIGZ-P9svut3eK3-KA HTTP/1.1[0m" 405 -
+127.0.0.1 - - [07/May/2020 17:24:09] "[1m[31mGET /inference?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoic2hvbGEiLCJleHAiOjE1ODg4Njg5NDN9.zlo6AWJF_KzwHtp2lkMQ4BRcyvIGZ-P9svut3eK3-KA HTTP/1.1[0m" 405 -
+127.0.0.1 - - [07/May/2020 17:24:53] "[37mPOST /inference?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoic2hvbGEiLCJleHAiOjE1ODg4Njg5NDN9.zlo6AWJF_KzwHtp2lkMQ4BRcyvIGZ-P9svut3eK3-KA HTTP/1.1[0m" 200 -
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+Traceback (most recent call last):
+  File "app.py", line 81, in <module>
+    app.run(host ='0.0.0.0',port=5500, debug=True)
+  File "/Users/akinwande.komolafe/opt/anaconda3/lib/python3.7/site-packages/flask/app.py", line 990, in run
+    run_simple(host, port, self, **options)
+  File "/Users/akinwande.komolafe/opt/anaconda3/lib/python3.7/site-packages/werkzeug/serving.py", line 988, in run_simple
+    s.bind(server_address)
+OSError: [Errno 48] Address already in use
+127.0.0.1 - - [07/May/2020 18:28:16] "[1m[31mGET /inference?token= HTTP/1.1[0m" 405 -
+127.0.0.1 - - [07/May/2020 18:28:19] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [07/May/2020 18:28:27] "[1m[31mGET /inference?token= HTTP/1.1[0m" 405 -
+127.0.0.1 - - [07/May/2020 18:28:28] "[33mGET / HTTP/1.1[0m" 404 -
+127.0.0.1 - - [07/May/2020 18:28:31] "[1m[31mGET /login HTTP/1.1[0m" 401 -
+127.0.0.1 - - [07/May/2020 18:28:46] "[1m[31mPOST /inference?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiYWRld2FsZSIsImV4cCI6MTU4ODg2ODIxMH0.iwPyEw5s3a8RqxmADA3uV2wwgw-bIfk45EM45TCccFc HTTP/1.1[0m" 401 -
+127.0.0.1 - - [07/May/2020 18:29:20] "[37mGET /login HTTP/1.1[0m" 200 -
+127.0.0.1 - - [07/May/2020 18:29:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [07/May/2020 18:30:34] "[1m[31mPOST /login HTTP/1.1[0m" 405 -
+127.0.0.1 - - [07/May/2020 18:30:40] "[37mGET /login HTTP/1.1[0m" 200 -
+127.0.0.1 - - [07/May/2020 18:31:11] "[1m[31mGET /inference?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiYWRld2FsZSIsImV4cCI6MTU4ODg3MzI0MH0.rRQ-j1IB8FMSTB5THSWxZh_U_m1IzcS9vDKSon6Os50 HTTP/1.1[0m" 405 -
+127.0.0.1 - - [07/May/2020 18:31:27] "[37mPOST /inference?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiYWRld2FsZSIsImV4cCI6MTU4ODg3MzI0MH0.rRQ-j1IB8FMSTB5THSWxZh_U_m1IzcS9vDKSon6Os50 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [07/May/2020 18:32:22] "[33mGET / HTTP/1.1[0m" 404 -
+127.0.0.1 - - [07/May/2020 18:32:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [07/May/2020 18:32:42] "[37mGET /ping HTTP/1.1[0m" 200 -
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+Traceback (most recent call last):
+  File "app.py", line 81, in <module>
+    app.run(host ='0.0.0.0',port=5500, debug=True)
+  File "/Users/akinwande.komolafe/opt/anaconda3/lib/python3.7/site-packages/flask/app.py", line 990, in run
+    run_simple(host, port, self, **options)
+  File "/Users/akinwande.komolafe/opt/anaconda3/lib/python3.7/site-packages/werkzeug/serving.py", line 988, in run_simple
+    s.bind(server_address)
+OSError: [Errno 48] Address already in use
+127.0.0.1 - - [07/May/2020 22:11:56] "[33mPOST / HTTP/1.1[0m" 404 -
+127.0.0.1 - - [07/May/2020 22:12:01] "[1m[31mPOST /login HTTP/1.1[0m" 405 -
+127.0.0.1 - - [07/May/2020 22:12:14] "[37mGET /login HTTP/1.1[0m" 200 -
+127.0.0.1 - - [07/May/2020 22:14:27] "[1m[31mGET /inference?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiYWRld2FsZSIsImV4cCI6MTU4ODg4NjUzNH0.8lO6CjKDvUWtVsUc_ITLGw4efBAuY9_SCcZTa42Ji1g HTTP/1.1[0m" 405 -
+127.0.0.1 - - [07/May/2020 22:14:33] "[37mPOST /inference?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiYWRld2FsZSIsImV4cCI6MTU4ODg4NjUzNH0.8lO6CjKDvUWtVsUc_ITLGw4efBAuY9_SCcZTa42Ji1g HTTP/1.1[0m" 200 -
+127.0.0.1 - - [07/May/2020 22:20:59] "[37mPOST /inference?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiYWRld2FsZSIsImV4cCI6MTU4ODg4NjUzNH0.8lO6CjKDvUWtVsUc_ITLGw4efBAuY9_SCcZTa42Ji1g HTTP/1.1[0m" 200 -
